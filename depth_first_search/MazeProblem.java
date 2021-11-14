@@ -29,12 +29,37 @@ public class MazeProblem {
     maze[2][3] = 'E';
 
     // Display maze
-    System.out.println("Maze Problem:");
+    System.out.println("Maze #1 Problem:");
     display(maze);
 
     // Solve maze
     System.out.println("Solution:");
     solveMaze(maze);
+
+    // Populate unsolvable maze
+    char[][] unsolvableMaze = new char[3][4];
+    // 1st Row
+    unsolvableMaze[0][0] = 'S';
+    unsolvableMaze[0][1] = '.';
+    unsolvableMaze[0][2] = '.';
+    unsolvableMaze[0][3] = '.';
+    // 2nd Row
+    unsolvableMaze[1][0] = '*';
+    unsolvableMaze[1][1] = '*';
+    unsolvableMaze[1][2] = '*';
+    unsolvableMaze[1][3] = '*';
+    // 3rd Row
+    unsolvableMaze[2][0] = '.';
+    unsolvableMaze[2][1] = '.';
+    unsolvableMaze[2][2] = '.';
+    unsolvableMaze[2][3] = 'E';
+
+    // Display unsolvable Maze
+    System.out.println("Maze #2 Problem:");
+    display(unsolvableMaze);
+
+    System.out.println("Solution:");
+    solveMaze(unsolvableMaze);
   }
 
   /* * Declaration of constants * */
@@ -72,7 +97,7 @@ public class MazeProblem {
       System.out.println("ERROR! The maze is not solvable!");
       return false;
     }
-    System.out.println("SUCCESS! The maze is solved!");
+    System.out.println("SUCCESS! The maze is solved! Here's the path:");
     display(solution); // Display solution path
     return true;
   }
