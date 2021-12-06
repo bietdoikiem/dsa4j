@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Implementation {
   public static void main(String[] args) {
     // Implementation
-    int[] intArr = new int[] { 1, 2, 1, 2, 3, 4, 3 };
+    int[] intArr = new int[] { 1, 2, 1, 2, 3, 4, 3, 3, 4 };
     int[] frequencyArr = new int[4]; // NOTE: 4 Distinct values (1, 2, 3, 4) => O(n max) = O(4)
     // Update frequency array => O(n) => O(7)
     for (int i = 0; i < intArr.length; i++) {
