@@ -6,6 +6,6 @@ public class Implementation {
   }
 
   public static void insertionSort(int[] arr) {
-    // NOTE:
+    // NOTE: Impl
   }
 }
