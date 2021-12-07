@@ -10,7 +10,11 @@ public class Implementation {
   }
 
   /**
-   * Apply Selection Sort for the integer array
+   * Apply Selection Sort for the integer array (Time complexity for all cases:
+   * O(n^2))
+   * Time for write: O(n)
+   * Time for read: O(n^2)
+   * => Good for storage type that requires small number of write operations.
    * 
    * @param arr Array to be sorted
    */
