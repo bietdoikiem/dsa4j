@@ -1,4 +1,4 @@
-package distribution_sort;
+package sorts.distribution_sort;
 
 import java.util.Arrays;
 
@@ -26,7 +26,8 @@ public class Implementation {
           break;
       }
     }
-    // Cumulative-calculated array based on frequency array => O(n max) = O(4)
+    // Cumulative-calculated array based on frequency array => O(n max - 1) ~= O(n
+    // max) = O(4)
     for (int i = 1; i < frequencyArr.length; i++) {
       frequencyArr[i] += frequencyArr[i - 1];
     }

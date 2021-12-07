@@ -1,4 +1,4 @@
-package depth_first_search;
+package searches.depth_first_search;
 
 import data_structures.BinaryNode;
 import data_structures.BinaryTree;

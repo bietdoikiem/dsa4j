@@ -1,4 +1,4 @@
-package depth_first_search;
+package searches.depth_first_search;
 
 public class MazeProblem {
 

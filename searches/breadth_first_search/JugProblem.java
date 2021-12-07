@@ -1,4 +1,4 @@
-package breadth_first_search;
+package searches.breadth_first_search;
 
 import java.util.ArrayList;
 import java.util.HashSet;
