@@ -42,7 +42,6 @@ public class KnapsackExhaustive {
 
     // Acquire the optimal (maximum) value between two case
     int optimalValue = Math.max(notIncluded, included);
-    System.out.println(optimalValue);
 
     return optimalValue;
   }
