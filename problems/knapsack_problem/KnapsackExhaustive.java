@@ -1,5 +1,8 @@
 package problems.knapsack_problem;
 
+/**
+ * Brute-force search (aka. Exhaustive search) solution for the Knapsack Problem
+ */
 public class KnapsackExhaustive {
   public static void main(String[] args) {
     /**

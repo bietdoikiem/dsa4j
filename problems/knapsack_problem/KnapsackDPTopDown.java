@@ -1,6 +1,9 @@
 package problems.knapsack_problem;
 
-public class KnapsackDP {
+/**
+ * Top-Down Dynamic Programming solution for the Knapsack Problem
+ */
+public class KnapsackDPTopDown {
 
   public static int[][] globalCache;
 
@@ -17,6 +20,17 @@ public class KnapsackDP {
     System.out.println("Optimal value of items put in the knapsack: " + solve(last, items, capacity));
   }
 
+  /**
+   * Find the maximum value of items that can be put in the Knapsack
+   * 
+   * Time complexity: O(n*W) - n: the number of items & W: the maximum capacity of
+   * the Knapsack
+   * 
+   * @param last         Last index of item list
+   * @param items        List of items
+   * @param capacityLeft Capacity left of the knapsack
+   * @return Maximum value
+   */
   public static int solve(int last, Item[] items, int capacityLeft) {
     // Check invalid case if index is below zero || no capacity left
     if (last < 0 || capacityLeft == 0) {
